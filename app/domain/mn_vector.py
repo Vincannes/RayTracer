@@ -11,7 +11,7 @@ class Vector(object):
         self.z = z
 
     def __str__(self):
-        return "({}, {}, {})".format(self.x, self.y, self.z)
+        return "Vector({}, {}, {})".format(self.x, self.y, self.z)
 
     def do_product(self, other):
         return self.x * other.x + self.y * other.y + self.z * other.z
@@ -44,6 +44,8 @@ if __name__ == "__main__":
     v2 = Vector(3, 6, 8)
 
     print(v1.do_product(v2))
+    print(v1.magnitude())
+    print(v1.normalize())
     # print(v1 + v2)
     # print(v1 - v2)
     # print(v1 * v2)

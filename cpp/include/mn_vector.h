@@ -3,16 +3,24 @@
 #ifndef MN_VECTOR_H
 #define MN_VECTOR_H
 
-class Vector
-{
+
+struct NormValues {
+    float x, y, z;
+};
+
+class Vector {
+/*A three element vector used in 3D Graphics.*/
+
 public:
-    // prototypes
+
+    Vector();
     Vector(float x, float y, float z);
+    float x, y, z;
     float doProduct(Vector other);
-    // std::tuple<float, float, float> doProduct(Vector other);
+    float magnitude();
+    NormValues normalize();
 
 private:
-    float x, y, z;
 
 };
 
