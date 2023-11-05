@@ -13,6 +13,7 @@ class Vector {
 
 public:
 
+    Vector();
     Vector(float x, float y, float z);
     float x, y, z;
     float doProduct(Vector other);

@@ -3,6 +3,8 @@
 
 #include "mn_vector.h"
 
+Vector::Vector() : x(0.0), y(0.0), z(0.0) {}
+
 Vector::Vector(float x, float y, float z)
 {
     this->x = x;
