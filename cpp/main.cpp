@@ -7,8 +7,10 @@
 #include "include/mn_color.h"
 #include "include/mn_scene.h"
 #include "include/mn_light.h"
+#include "include/mn_image.h"
 #include "include/mn_objects.h"
 #include "include/mn_materials.h"
+#include "include/mn_engine.h"
 
 void old()
 {    
@@ -52,6 +54,9 @@ int main() {
     };
 
     Scene scene(camera, objects, lights, width, height);
-
+    RenderEngine engine;
+    
+    Image image = engine.render(scene);
+    image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test5.mn");
     return 1;
 }

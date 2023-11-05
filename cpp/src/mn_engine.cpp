@@ -6,3 +6,11 @@ RenderEngine::RenderEngine()
 {
 
 }
+
+Image RenderEngine::render(Scene scene)
+{
+    int widht = scene.width;
+    int height = scene.height;
+    Image pixels(widht, height);
+    return pixels;
+}

@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9277b2c1-a0ae-4c43-ba75-a192ee5f15fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/mn_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/mn_vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_vector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_engine.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,5 +100,15 @@
       <updated>1699126968959</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/domain/mn_engine.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
