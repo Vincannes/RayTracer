@@ -1,6 +1,18 @@
-from app.domain.mn_math_utils import square_root
+#include "mn_vector.h"
 
+Vector::Vector(float x, float y, float z)
+{
+    this->x = x;
+    this->y = y;
+    this->z = z;
+}
 
+float Vector::doProduct(Vector other)
+{
+    return this->x * other.x + this->y * other.y + this->z * other.z;
+}
+
+/*
 class Vector(object):
     """A three element vector used in 3D Graphics.
     """
@@ -37,16 +49,5 @@ class Vector(object):
 
     def __truediv__(self, other):
         assert not isinstance(other, Vector)
-        return Vector(self.x / other, self.y / other, self.z / other)
-
-if __name__ == "__main__":
-    v1 = Vector(1, -2, -2)
-    v2 = Vector(3, 6, 8)
-
-    print(v1.do_product(v2))
-    # print(v1 + v2)
-    # print(v1 - v2)
-    # print(v1 * v2)
-    # print(v1 / v2)
-    # print(v1.magnitude())
-    # print(v1.normalize())
+        return Vector(se
+*/
