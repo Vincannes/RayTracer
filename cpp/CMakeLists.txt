@@ -22,6 +22,8 @@ set(SOURCES
     src/mn_ray.cpp
     src/mn_scene.cpp
     src/mn_light.cpp
+    src/mn_engine.cpp
+    src/mn_image.cpp
 )
 # file(GLOB SOURCES "src/*.cpp")
 
