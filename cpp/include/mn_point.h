@@ -10,6 +10,7 @@ class PositionPoint : public Vector
 
 public:
 
+    PositionPoint() noexcept;
     PositionPoint(float x, float y, float z) noexcept;
 
 private:

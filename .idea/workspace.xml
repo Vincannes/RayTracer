@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9277b2c1-a0ae-4c43-ba75-a192ee5f15fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_materials.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_materials.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/include/mn_objects.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_objects.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_point.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_point.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_materials.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_materials.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/src/mn_objects.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_objects.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

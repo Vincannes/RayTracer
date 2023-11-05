@@ -1,22 +1,24 @@
 #include <tuple>
 
 #include <mn_ray.h>
+#include <mn_point.h>
 #include <mn_materials.h>
 
 #ifndef MN_OBJECTS_H
 #define MN_OBJECTS_H
 
 class Sphere {
-/*A three element vector used in 3D Graphics.*/
+/*Sphere has center, radius and material.*/
 
 public:
 
-    Sphere(float center, float radius, Material material);
+    Sphere(PositionPoint center, float radius, Material material);
 
-    float center, radius;
+    PositionPoint center;
+    float radius;
     Material material;
 
-    Vector intersects(Ray ray);
+    float intersects(Ray ray);
 
 private:
 
