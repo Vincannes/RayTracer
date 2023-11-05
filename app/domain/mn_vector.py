@@ -44,6 +44,8 @@ if __name__ == "__main__":
     v2 = Vector(3, 6, 8)
 
     print(v1.do_product(v2))
+    print(v1.magnitude())
+    print(v1.normalize())
     # print(v1 + v2)
     # print(v1 - v2)
     # print(v1 * v2)

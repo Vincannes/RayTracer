@@ -14,8 +14,14 @@ set(CMAKE_CXX_COMPILER "C:/mingw64/bin/g++.exe")
 # Liste des fichiers source
 set(SOURCES
     main.cpp
-    src/mn_vector.cpp  # Inclure le sous-dossier "src" dans le chemin
+    src/mn_vector.cpp
+    src/mn_point.cpp
+    src/mn_objects.cpp
+    src/mn_materials.cpp
+    src/mn_color.cpp
 )
+# file(GLOB SOURCES "src/*.cpp")
+
 
 # Ajouter le chemin du sous-dossier "include" pour les fichiers d'en-tête
 include_directories(include)
