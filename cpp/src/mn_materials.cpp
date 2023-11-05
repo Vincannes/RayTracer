@@ -4,11 +4,9 @@
 
 #include "mn_materials.h"
 
-Material::Material(
-    Color color=Color::fromHex("#FFFFFF"), float ambient=0.05, 
-    float diffuse=1.0, float specular=1.0, float reflection=0.5
-    )
-{
+Material::Material(const Color& color, float ambient, float diffuse, float specular, float reflection)
+    : color(color), ambient(ambient), diffuse(diffuse), specular(specular), reflection(reflection) {}
 
+Color Material::colorAt(Vector position) {
+    return this->color;
 }
-

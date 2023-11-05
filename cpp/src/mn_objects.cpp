@@ -3,8 +3,8 @@
 
 #include "mn_objects.h"
 
-Sphere::Sphere(float center, float radius, float material)
-{
+// Sphere::Sphere(float center, float radius, float material)
+// {
 
-}
+// }
 

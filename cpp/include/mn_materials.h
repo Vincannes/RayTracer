@@ -1,20 +1,18 @@
-#include <tuple>
+#ifndef MN_MATERIALS_H
+#define MN_MATERIALS_H
 
-#include <mn_color.h> 
-
-#ifndef MN_OBJECTS_H
-#define MN_OBJECTS_H
+#include "mn_color.h"
 
 class Material {
-/*A three element vector used in 3D Graphics.*/
-
 public:
+    Material(const Color& color, float ambient, float diffuse, float specular, float reflection);
 
-    Material(Color color, float ambient, float diffuse, float specular, float reflection);
+    Color color;
+    float ambient, diffuse, specular, reflection;
+
+    Color colorAt(Vector position);
 
 private:
-
 };
 
-
-#endif
+#endif // MN_MATERIALS_H
