@@ -3,10 +3,8 @@ from app.domain.mn_math_utils import square_root
 
 class MnObject(object):
 
-    def __init__(self, x=0.0, y=0.0, z=0.0):
-        self.x = x
-        self.y = y
-        self.z = z
+    def __init__(self):
+        pass
 
 
 class Sphere(object):
@@ -30,11 +28,17 @@ class Sphere(object):
         b = 2 * ray.direction.do_product(sphere_to_ray)
         c = sphere_to_ray.do_product(sphere_to_ray) - self.radius * self.radius
         discriminant = b * b - 4 * c
-        print("spre itnersect")
-        print("Cam", ray.origin, "0.0", self.center, "SphereRay", sphere_to_ray)
-        print(b, c)
         if discriminant >= 0:
             dist = (-b - square_root(discriminant)) / 2
             if dist > 0:
                 return dist
         return None
+
+
+class Card(object):
+
+    def __init__(self):
+        pass
+
+    def intersects(self, ray):
+        pass

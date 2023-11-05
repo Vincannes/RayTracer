@@ -51,7 +51,7 @@ def main():
     engine = RenderEngine()
     image = engine.render(scene)
 
-    image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test2.ppm")
+    image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test3.ppm")
 
 
 if __name__ == "__main__":
