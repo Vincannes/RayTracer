@@ -20,6 +20,8 @@ set(SOURCES
     src/mn_materials.cpp
     src/mn_color.cpp
     src/mn_ray.cpp
+    src/mn_scene.cpp
+    src/mn_light.cpp
 )
 # file(GLOB SOURCES "src/*.cpp")
 

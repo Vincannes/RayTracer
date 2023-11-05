@@ -5,6 +5,8 @@
 #include "include/mn_vector.h"
 #include "include/mn_point.h"
 #include "include/mn_color.h"
+#include "include/mn_scene.h"
+#include "include/mn_light.h"
 #include "include/mn_objects.h"
 #include "include/mn_materials.h"
 
@@ -44,7 +46,12 @@ int main() {
         Sphere(PositionPoint(-0.75, -0.1, 2.25), 0.6, Material(Color::fromHex("#803980")))
     };
 
-    std::vector<Sphere> lights = {};
+    std::vector<Light> lights = {
+        Light(PositionPoint(1.5, -0.5, -10), Color::fromHex("#FFFFFF")),
+        Light(PositionPoint(-0.5, -10.5, 5.0), Color::fromHex("#E6E6E6"))
+    };
+
+    Scene scene(camera, objects, lights, width, height);
 
     return 1;
 }
