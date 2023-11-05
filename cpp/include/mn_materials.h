@@ -1,5 +1,7 @@
 #include <tuple>
 
+#include <mn_color.h> 
+
 #ifndef MN_OBJECTS_H
 #define MN_OBJECTS_H
 
@@ -8,7 +10,7 @@ class Material {
 
 public:
 
-    Material(float color, float ambient, float diffuse, float specular, float reflection);
+    Material(Color color, float ambient, float diffuse, float specular, float reflection);
 
 private:
 
