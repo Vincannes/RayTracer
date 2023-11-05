@@ -2,6 +2,8 @@ from app.domain.mn_point import Point
 from app.domain.mn_vector import Vector
 from app.domain.mn_image import Image
 from app.domain.mn_color import Color
+from app.domain.mn_light import Light
+from app.domain.mn_material import Material
 from app.domain.mn_objects import Sphere
 from app.domain.mn_scene import Scene
 from app.domain.mn_engine import RenderEngine
@@ -13,7 +15,6 @@ HEIGHT = 200
 RAYON = 50
 
 FILE_TO = "D:\\Desk\\python\\RayTracer\\tests\\test_01.ppm"
-
 
 def write_image(width, height):
     to_ppm = f"P3\n{width} {height} \n{255}\n"
@@ -40,17 +41,15 @@ def write_image(width, height):
             fichier.write(pixel)
     fichier.write("\n")
 
-
-
 def main():
     WIDTH = 320
     HEIGHT = 200
     camera = Vector(0, 0, -1)
-    objects = [Sphere(Point(0, 0, 0), 0.4, Color.from_hex("#FF0000"))]
-    scene = Scene(camera, objects, WIDTH, HEIGHT)
+    objects = [Sphere(Point(0, 0, 0), 0.4, Material(Color.from_hex("#FF0000")))]
+    lights = [Light(Point(1.5, -0.5, -10), Color.from_hex("#FFFFFF"))]
+    scene = Scene(camera, objects, lights, WIDTH, HEIGHT)
     engine = RenderEngine()
     image = engine.render(scene)
-
     image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test3.ppm")
 
 

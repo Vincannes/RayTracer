@@ -34,6 +34,14 @@ class Sphere(object):
                 return dist
         return None
 
+    def normal(self, surface_point):
+        """
+        Returns surface normal to the point on sphere's surface
+        :param surface_point:
+        :return:
+        """
+        return (surface_point - self.center).normalize()
+
 
 class Card(object):
 
