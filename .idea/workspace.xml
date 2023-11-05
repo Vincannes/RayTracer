@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9277b2c1-a0ae-4c43-ba75-a192ee5f15fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/RayTracer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/mn_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/mn_material.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_material.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/mn_color.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_color.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/mn_vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_vector.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.mn_vector">
     <configuration name="mn_vector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RayTracer" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.mn_vector" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
