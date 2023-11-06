@@ -7,9 +7,13 @@
 
 class Color : public Vector {
 public:
-    Color() : Vector(0.0f, 0.0f, 0.0f) {} // Constructeur par défaut initialisant à du noir (0, 0, 0)
+    Color() noexcept,
     Color(float x, float y, float z) noexcept;
+    Color operator+(const Color& other) const;
+    Color& operator+=(const Color& other);
+    Color operator*(float color) const;
     static Color fromHex(std::string hexcolor);
 };
+
 
 #endif

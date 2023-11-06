@@ -27,6 +27,7 @@ class Sphere(object):
         # a = 1
         b = 2 * ray.direction.do_product(sphere_to_ray)
         c = sphere_to_ray.do_product(sphere_to_ray) - self.radius * self.radius
+        # print(sphere_to_ray.x, sphere_to_ray.y, sphere_to_ray.z, "  ", b, c)
         discriminant = b * b - 4 * c
         if discriminant >= 0:
             dist = (-b - square_root(discriminant)) / 2

@@ -20,6 +20,11 @@ public:
     float magnitude();
     NormValues normalize();
 
+    Vector operator+(const Vector& other) const;
+    Vector operator-(const Vector& other) const;
+    Vector operator*(const float value) const;
+    Vector operator*(const Vector& other) const;
+
 private:
 
 };

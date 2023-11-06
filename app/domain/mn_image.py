@@ -20,7 +20,6 @@ class Image(object):
         # Parse every Pixels
         for row in self.pixels:
             for color in row:
-                print(color)
                 pixel = "{} {} {} ".format(
                     Image._to_byte(color.x),
                     Image._to_byte(color.y),

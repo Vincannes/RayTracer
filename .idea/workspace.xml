@@ -6,9 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="9277b2c1-a0ae-4c43-ba75-a192ee5f15fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/mn_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/mn_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/mn_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/mn_objects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_color.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_color.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/include/mn_engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_objects.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_objects.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_scene.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_scene.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/include/mn_vector.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/include/mn_vector.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_color.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_color.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cpp/src/mn_engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_materials.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_materials.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_objects.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_objects.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_scene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_scene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/src/mn_vector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/src/mn_vector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test3.mn" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test3.mn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test3.ppm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test4.mn" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test4.mn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test5.mn" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test5.mn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,13 +51,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.test">
     <configuration name="mn_vector" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RayTracer" />

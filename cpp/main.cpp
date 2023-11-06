@@ -1,6 +1,8 @@
 #include <vector>
 #include <string>
+#include <memory>
 #include <iostream>
+#include <cmath>
 
 #include "include/mn_vector.h"
 #include "include/mn_point.h"
@@ -36,27 +38,57 @@ void old()
 
 }
 
-int main() {
-    std::cout << "" << std::endl;
-
-    int width = 320;
-    int height = 200;
-
+void old2()
+{ 
+    int width = 20;
+    int height = 20;
     Vector camera(0, -0.35, -1);
-    std::vector<Sphere> objects = {
-        Sphere(PositionPoint(0.75, -0.1, 1), 0.6, Material(Color::fromHex("#0000FF"))),
-        Sphere(PositionPoint(-0.75, -0.1, 2.25), 0.6, Material(Color::fromHex("#803980")))
-    };
 
-    std::vector<Light> lights = {
-        Light(PositionPoint(1.5, -0.5, -10), Color::fromHex("#FFFFFF")),
-        Light(PositionPoint(-0.5, -10.5, 5.0), Color::fromHex("#E6E6E6"))
-    };
+    std::vector<std::shared_ptr<Sphere>> objects;
+    objects.push_back(std::make_shared<Sphere>(
+        PositionPoint(0.75, -0.1, 1),
+        0.6,
+        Material(Color::fromHex("#0000FF"))
+    ));
+    // objects.push_back(std::make_shared<Sphere>(PositionPoint(-0.75, -0.1, 2.25), 0.6, Material(Color::fromHex("#803980"))));
+
+    std::vector<std::shared_ptr<Light>> lights;
+    lights.push_back(std::make_shared<Light>(PositionPoint(1.5, -0.5, -10), Color::fromHex("#FFFFFF")));
+    // lights.push_back(std::make_shared<Light>(PositionPoint(-0.5, -10.5, 5.0), Color::fromHex("#E6E6E6")));
 
     Scene scene(camera, objects, lights, width, height);
     RenderEngine engine;
     
     Image image = engine.render(scene);
     image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test5.mn");
+}
+
+int main() {
+    std::cout << "" << std::endl;
+
+    int width = 320;
+    int height = 200;
+
+    Vector camera(0, 0, -1);
+
+    std::vector<std::shared_ptr<Sphere>> objects;
+    objects.push_back(std::make_shared<Sphere>(
+        PositionPoint(0, 0, 0),
+        0.001,
+        Material(Color::fromHex("#FF0000"))
+    ));
+
+    std::vector<std::shared_ptr<Light>> lights;
+    lights.push_back(std::make_shared<Light>(
+        PositionPoint(1.5, -0.5, -10), 
+        Color::fromHex("#FFFFFF")
+    ));
+
+    Scene scene(camera, objects, lights, width, height);
+    RenderEngine engine;
+    Image image = engine.render(scene);
+
+    image.write_ppm("D:\\Desk\\python\\RayTracer\\tests\\test5.mn");
+
     return 1;
 }

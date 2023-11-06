@@ -45,7 +45,8 @@ class RenderEngine:
         # calcul depht
         if depth < self.MAX_DEPTH:
             new_ray_pos = hit_pos + hit_normal * self.MIN_DISPLACE
-            new_ray_dir = ray.direction - 2 * ray.direction.do_product(hit_normal) * hit_normal
+            new_ray_dir = ray.direction - hit_normal * (2 * ray.direction.do_product(hit_normal))
+            # new_ray_dir = ray.direction - 2 * ray.direction.do_product(hit_normal) * hit_normal
             new_ray = Ray(new_ray_pos, new_ray_dir)
 
             # Attenuate the reflected ray found by the reflection coeff

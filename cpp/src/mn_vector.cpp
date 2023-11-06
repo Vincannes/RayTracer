@@ -22,6 +22,22 @@ float Vector::magnitude()
     return sqrt(doProduct(*this));
 }
 
+Vector Vector::operator+(const Vector& other) const {
+    return Vector(x + other.x, y + other.y, z + other.z);
+}
+
+Vector Vector::operator-(const Vector& other) const {
+    return Vector(x - other.x, y - other.y, z - other.z);
+}
+
+Vector Vector::operator*(const float value) const{
+    return Vector(x * value, y * value, z * value);
+}
+
+Vector Vector::operator*(const Vector& other) const{
+    return Vector(x * other.x, y * other.y, z * other.z);
+}
+
 NormValues Vector::normalize()
 {
     float norm_x = this->x / magnitude();

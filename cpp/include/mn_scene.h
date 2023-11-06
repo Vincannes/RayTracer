@@ -9,11 +9,16 @@
 class Scene {
 public:
 
-    Scene(Vector camera, std::vector<Sphere> objects, std::vector<Light> lights, int width, int height); // Changer Sphere en Light
+    Scene(
+        Vector camera, 
+        const std::vector<std::shared_ptr<Sphere>>& objects, 
+        const std::vector<std::shared_ptr<Light>>& lights, 
+        int width, int height
+    );
 
     Vector camera;
-    std::vector<Sphere> objects; // Conserver les objets en tant que Spheres
-    std::vector<Light> lights; // Utiliser la classe Light pour les lumières
+    std::vector<std::shared_ptr<Sphere>> objects;
+    std::vector<std::shared_ptr<Light>> lights;
     int width;
     int height;
 

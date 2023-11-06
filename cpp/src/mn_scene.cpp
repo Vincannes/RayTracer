@@ -1,13 +1,8 @@
 #include <iostream>
+#include <memory>
 
 #include "mn_scene.h"
 
-Scene::Scene(Vector camera, std::vector<Sphere> objects, std::vector<Light> lights, int width, int height)
-{
-    this->camera=camera;
-    this->objects=objects;
-    this->lights=lights;
-    this->width=width;
-    this->height=height;
+Scene::Scene(Vector camera, const std::vector<std::shared_ptr<Sphere>>& objects, const std::vector<std::shared_ptr<Light>>& lights, int width, int height)
+    : camera(camera), objects(objects), lights(lights), width(width), height(height) {
 }
-

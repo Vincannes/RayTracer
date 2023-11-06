@@ -19,7 +19,8 @@ public:
     Material material;
 
     float intersects(Ray ray);
-
+    Vector normal(Vector surface_point);
+;
 private:
 
 };
